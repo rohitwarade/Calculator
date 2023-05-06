@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(213, 210, 210);
+    font-family: cursive ,sans-serif ,'Times New Roman', Times, serif;
+    outline: none;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10px;
+}
+.container{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.calculator{
+    background-color: black;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: inset 5px 5px 12px black,
+                      5px 5px 12px grey;
+    display: grid;
+    grid-template-columns: repeat(4,60px);
+}
+
+input{
+    grid-column: span 4;
+    height: 70px;
+    background: black;
+    border: none;
+    font-size: 50px;
+    color: white;
+    text-align: end;
+    margin: 35px 10px 25px 10px;    
+    padding: 5px;
+}
+
+::placeholder{
+    color: white;
+}
+
+button{
+    height:50px;
+    width: 50px;
+    background-color: rgb(85, 82, 82);
+    border: none;
+    border-radius: 50%;
+    margin: 7px 8px 7px 8px;
+    font-size: 20px;
+    color: white;
+}
+
+button:hover{
+    background: grey;
+    transition: 0.3s;
+}
+
+.zero{
+    grid-column: span 2;
+    width: 90%;
+    border-radius: 40px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.class1{
+    background: rgb(182, 180, 180);
+    color: black;
+}
+
+.class1:hover{
+    background: white;
+    transition: 0.3s;
+}
+
+.class2{
+    background: #f78d1b;
+    font-size: 25px;
+}
+
+.class2:hover{
+    background: white;
+    color: #f78d1b;
+    transition: 0.4s;
+}
